@@ -7,101 +7,80 @@
     <title>El Caribefunk</title>
     <!-- Description used by google to find the site -->
     <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="nav main-nav">
             <ul>
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="tienda.html">TIENDA</a></li>
                 <li><a href="bio.html">BIO</a></li>
             </ul>
-            <hr>
-            <h1>El Caribefunk</h1>
-            <button type="button">Escucha nuestro ultimo album</button>
-            <br>
-            <br>
-            <!-- TODO: find a background image -->
-            <button type="button">&#9658</button>
         </nav>
+        <h1 class="band-name band-name-large">El Caribefunk</h1>
+        <div class="container">
+            <button class="btn btn-header" type="button">Escucha 
+            nuestro ultimo album</button>
+        </div>
+        <button class="btn btn-header btn-play" type="button">&#9658</button>
     </header>
-    <section>
-        <h2>TOURS</h2>
+    <section class="content-section container">
+        <h2 class="section-header">TOURS</h2>
         <div>
-            <div>
-               <strong>OCT 23</strong>
-               &lt;&gt;
-               <span>COPENHAGUE, DK</span>
-               &lt;&gt;
-               <span>TBD</span>
-               &lt;&gt;
-               <button type="button">COMPRAR</button>
-               <hr>
+            <div class="tour-row">
+               <span class="tour-item tour-date">OCT 23</span>
+               <span class="tour-item tour-city">COPENHAGUE, DK</span>
+               <span class="tour-item tour-arena">COPENHAGUE ARENA</span>
+               <button type="button" class="btn tour-item tour-btn btn-primary">COMPRAR</button>
             </div>
-             <div>
-                <strong>OCT 24</strong>
-                &lt;&gt;
-                <span>MALMO, SW</span>
-                &lt;&gt;
-                <span>TBD</span>
-                &lt;&gt;
-                <button type="button">COMPRAR</button>
-                <hr>
+             <div class="tour-row">
+                <span class="tour-item tour-date">OCT 24</span>
+                <span class="tour-item tour-city">MALMO, SW</span>
+                <span class="tour-item tour-arena">MALMO ARENA</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">COMPRAR</button>
              </div>
-             <div>
-                <strong>OCT 30</strong>
-                &lt;&gt;
-                <span>PRAGA, CZ</span>
-                &lt;&gt;
-                <span>TBD</span>
-                &lt;&gt;
-                <button type="button">COMPRAR</button>
-                <hr>
+             <div class="tour-row">
+                <span class="tour-item tour-date">OCT 30</span>
+                <span class="tour-item tour-city">PRAGA, CZ</span>
+                <span class="tour-item tour-arena">PRAGA ARENA</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">COMPRAR</button>
              </div>
-             <div>
-                <strong>NOV 05</strong>
-                &lt;&gt;
-                <span>MILAN, IT</span>
-                &lt;&gt;
-                <span>TBD</span>
-                &lt;&gt;
-                <button type="button">COMPRAR</button>
-                <hr>
+             <div class="tour-row">
+                <span class="tour-item tour-date">NOV 05</span>
+                <span class="tour-item tour-city">MILAN, IT</span>
+                <span class="tour-item tour-arena">MILAN ARENA</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">COMPRAR</button>
              </div>
-             <div>
-                <strong>NOV 06</strong>
-                &lt;&gt;
-                <span>TOULOUSE, FR</span>
-                &lt;&gt;
-                <span>TBD</span>
-                &lt;&gt;
-                <button type="button">COMPRAR</button>
-                <hr>
+             <div class="tour-row">
+                <span class="tour-item tour-date">NOV 06</span>
+                <span class="tour-item tour-city">TOULOUSE, FR</span>
+                <span class="tour-item tour-arena">TOULOUSE ARENA</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">COMPRAR</button>
              </div>
-             <div>
-                <strong>NOV 07</strong>
-                &lt;&gt;
-                <span>LYON, FR</span>
-                &lt;&gt;
-                <span>TBD</span>
-                &lt;&gt;
-                <button type="button">COMPRAR</button>
+             <div class="tour-row">
+                <span class="tour-item tour-date">NOV 07</span>
+                <span class="tour-item tour-city">LYON, FR</span>
+                <span class="tour-item tour-arena">LYON ARENA</span>
+                <button type="button" class="btn tour-item tour-btn btn-primary">COMPRAR</button>
              </div>
         </div>
     </section>
-    <footer>
-        <h3>El Caribefunk</h3>
-        <ul>
-            <li>
-                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
-            </li>
-            <li>
-                <a href="https://spotify.com" target="_blank"><i class="fab fa-spotify fa-3x"></i></a>
-            </li>
-            <li>
-                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-            </li>
-        </ul>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">El Caribefunk</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="https://spotify.com" target="_blank"><i class="fab fa-spotify fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
