@@ -1,0 +1,19 @@
+{
+  "name": "fan-page",
+  "version": "1.0.0",
+  "description": "A mock-up fan page with online store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelmarvi/fan-page.git"
+  },
+  "author": "Jorge Marzola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelmarvi/fan-page/issues"
+  },
+  "homepage": "https://github.com/joelmarvi/fan-page#readme"
+}
