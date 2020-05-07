@@ -1,0 +1,42 @@
+{
+    "music": [
+        {
+            "id": 1,
+            "name": "El Caribefunk",
+            "price": 999,
+            "imgName": "caribefunk.jpg"
+        },
+        {
+            "id": 2,
+            "name": "El Playaman",
+            "price": 999,
+            "imgName": "playaman.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Tunsé",
+            "price": 1099,
+            "imgName": "tunse.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Energía Para Regalar",
+            "price": 1299,
+            "imgName": "energia.jpg"
+        }
+    ],
+    "merch": [
+        {
+            "id": 5,
+            "name": "Camiseta",
+            "price": 1999,
+            "imgName": "tshirt.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Mug",
+            "price": 1499,
+            "imgName": "mug.jpeg"
+        }
+    ]
+}
