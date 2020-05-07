@@ -8,8 +8,11 @@
     <!-- Description used by google to find the site -->
     <meta name="description" content="This is the description">
     <link rel="stylesheet" href="./styles/styles.css">
-    <!-- With async the script downloads in the background while the html is loading-->
-    <script src="./js/main.js" async></script>
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script>
+        let stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <header class="main-header">

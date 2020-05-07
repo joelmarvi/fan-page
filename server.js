@@ -20,6 +20,7 @@ app.get('/tienda', function(req, res) {
       res.status(500).end()
     } else {
       res.render('tienda.ejs', {
+        stripePublicKey: stripePublicKey,
         items: JSON.parse(data)
       })
     }

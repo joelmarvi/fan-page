@@ -27,13 +27,26 @@ function ready() {
     purchaseClicked);
 }
 
-function purchaseClicked() {
-    alert('Gracias por su compra');
-    let cartItems = document.getElementsByClassName('cart-items')[0];
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild);
+let stripeHandler = StripeCheckout.configure({
+    key: stripePublicKey,
+    locale: 'auto',
+    token: function(token) {
+        console.log(token)
     }
-    updateCartTotal();
+})
+
+function purchaseClicked() {
+    // alert('Gracias por su compra');
+    // let cartItems = document.getElementsByClassName('cart-items')[0];
+    // while (cartItems.hasChildNodes()) {
+    //     cartItems.removeChild(cartItems.firstChild);
+    // }
+    // updateCartTotal();
+    let priceElement = document.getElementsByClassName('cart-total-price')[0]
+    let price = parseFloat(priceElement.innerText.replace('$', '')) * 100
+    stripeHandler.open({
+        amount: price
+    })
 }
 
 function quantityChanged(e) {
